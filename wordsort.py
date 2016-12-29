@@ -1,4 +1,5 @@
 # Read in the txt file
+# nb adding this to github for the first time on 29/12/16
 import sys
 import argparse
 
