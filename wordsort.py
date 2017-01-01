@@ -1,7 +1,7 @@
 # Read in the txt file
 # nb adding this to github for the first time on 29/12/16
-import sys
-import argparse
+import sys # various functions & variables that set the Python runtime state
+import argparse # argparse module makes it easy to write user-friendly command-line interfaces.
 
 #ALT METHOD filename = sys.argv[1]
 #with open(filename, "r") as sourcefile:
