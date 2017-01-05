@@ -1,6 +1,6 @@
 # Read in the txt file
 # nb adding this to github again to test rulers in git commit message setup
-# Is diabling ST£ autowrap worth a punt
+# https://gist.github.com/dfevre/d9db90581a70878db03613045411b3e9#file-git-commit-message-sublime-settings
 import argparse # argparse module makes it easy to write user-friendly command-line interfaces.
 
 #ALT METHOD filename = sys.argv[1]
