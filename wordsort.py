@@ -1,12 +1,7 @@
 #!/usr/bin/env python
-# Read in the txt file
-# nb adding this to github again to test rulers in git commit message setup
-# https://gist.github.com/dfevre/d9db90581a70878db03613045411b3e9#file-git-commit-message-sublime-settings
-#  this needs tidying up
 
 import argparse  # argparse module user-friendly command-line interfaces
-# ALT METHOD filename = sys.argv[1]
-# with open(filename, "r") as sourcefile:
+
 parser = argparse.ArgumentParser() # first step when using argparse is to create a parser object, e.g., "parser" in this case
 # argparse is a complete argument processing library. The parser class is ArgumentParser. The constructor can take various/several arguments
 parser.add_argument('filename') # tell the parser what arguments to expect when the program runs
