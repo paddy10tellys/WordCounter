@@ -2,7 +2,7 @@
 
 import argparse  # argparse module user-friendly command-line interfaces
 
-parser = argparse.ArgumentParser() # first step when using argparse is to create a parser object, e.g., "parser" in this case
+parser = argparse.ArgumentParser()  # create parser object
 # argparse is a complete argument processing library. The parser class is ArgumentParser. The constructor can take various/several arguments
 parser.add_argument('filename') # tell the parser what arguments to expect when the program runs
 args = parser.parse_args() # args is a string
