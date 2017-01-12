@@ -1,12 +1,34 @@
 #!/usr/bin/env python
 
 import argparse  # argparse module user-friendly command-line interfaces
+import os
 
 parser = argparse.ArgumentParser()  # create parser object
 #  argparse is a complete argument processing library. The parser class
 #  is ArgumentParser. The constructor can take various/several arguments
 parser.add_argument('filename')  # give the parser obj the file it needs
 args = parser.parse_args()  # args is a string
+
+"""
+try:
+    with open(args.filename) as f: print("Testing textfile")
+except IOError as e:
+    print("Error: %s not found." % args.filename)
+
+if os.path.isfile(args.filename):
+    print("Success! Counted {}".format(args.filename))
+else:
+    print("Not a .txt file")
+
+
+try:
+    os.path.exists(args.filename)
+    #  print("Success! Counted {}".format(args.filename))
+except IOError as e:
+    print("Error: %s not found fuckface!" % args.filename)
+"""
+
+
 with open(args.filename) as sourcefile:  # sourcefile refer to the file
     suffixstr = args.filename[-4:]  # last 4 chars is ".txt"
     prefixstr = args.filename[0:-4] # the chars before ".txt"
