@@ -3,19 +3,19 @@
 import argparse  # argparse module user-friendly command-line interfaces
 
 parser = argparse.ArgumentParser()  # create parser object
-# argparse is a complete argument processing library. The parser class is ArgumentParser. The constructor can take various/several arguments
-parser.add_argument('filename') # tell the parser what arguments to expect when the program runs
-args = parser.parse_args() # args is a string
-with open(args.filename) as sourcefile: # Use sourcefile to refer to the file object
-  # do stuff here
-    suffixstr = args.filename[-4:]  # the last 4 chars of gettysburg.txt e.g., ".txt"
-    prefixstr = args.filename[0:-4] # the chars before .txt
-    outputfilename = prefixstr + "-count" + suffixstr # use this to create the output filename form the input filename
+#  argparse is a complete argument processing library. The parser class
+#  is ArgumentParser. The constructor can take various/several arguments
+parser.add_argument('filename')  # give the parser obj the file it needs
+args = parser.parse_args()  # args is a string
+with open(args.filename) as sourcefile:  # sourcefile refer to the file
+    suffixstr = args.filename[-4:]  # last 4 chars is ".txt"
+    prefixstr = args.filename[0:-4] # the chars before ".txt"
+    outputfilename = prefixstr + "-count" + suffixstr
     print("The sort will be saved in a file called " + '"' + outputfilename + '"')
-    #if ("{}".format(suffixstr)) != ".txt":
-     # print("you won't have got this far so how will you handle it\n")
+    if ("{}".format(suffixstr)) != ".txt":
+        print("you won't have got this far so how will you handle it\n")
 
-    #if mystr != ".txt":                    # run a test based on it to ensure user specified a .txt file
+    #if mystr != ".txt":  # run a test based on it to ensure user specified a .txt file
         # handle it
         #print("you have to specify a .txt file as an argument\n")
     data = sourcefile.read()
